@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-ivory: #FAF8F5;
+  --accent-magenta: #A52B70;
+  --accent-plum: #642044;
+  --accent-champagne: #C4A478;
+  --text-charcoal: #252525;
+  --surface-beige: #EDE7DF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAF8F5;
+  color: #252525;
+  overflow-x: hidden;
+}
+
+a,
+button,
+[role="button"],
+select,
+label[for] {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid #A52B70;
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
