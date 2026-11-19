@@ -17,8 +17,9 @@ const config: Config = {
         beige: "#EDE7DF",
       },
       fontFamily: {
-        serif: ["var(--font-cormorant)", "Georgia", "serif"],
-        sans: ["var(--font-manrope)", "system-ui", "sans-serif"],
+        serif: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
+        sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
+        sinhala: ["var(--font-sinhala)", "var(--font-dm-sans)", "sans-serif"],
       },
     },
   },

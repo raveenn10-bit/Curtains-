@@ -88,7 +88,7 @@ export function ProductShowcase({
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
               Signature Catalog · 20 Designs
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-charcoal mt-2">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
               Custom Curtain Showcase
             </h2>
             <p className="text-xs sm:text-sm text-charcoal/70 mt-2">

@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { BrandLogo } from "./BrandLogo";
+import { SocialIcons } from "./SocialIcons";
+import { PHONE_DISPLAY } from "@/data/products";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import { buildWhatsAppUrl } from "@/data/products";
 
@@ -31,13 +33,28 @@ export function Navbar() {
   );
 
   return (
-    <header
-      className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-ivory/95 backdrop-blur-md shadow-sm border-b border-champagne/25 py-3"
-          : "bg-ivory/90 backdrop-blur-sm py-4"
-      }`}
-    >
+    <header className="fixed top-0 inset-x-0 z-50">
+      <div className="bg-plum text-ivory text-xs">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-between gap-4">
+          <p className="truncate">
+            <span className="font-semibold">Made-to-measure curtains</span>
+            <span className="hidden sm:inline text-beige/80"> · Free quotation on WhatsApp</span>
+          </p>
+          <div className="flex items-center gap-4 shrink-0">
+            <a href="tel:+94779381373" className="hidden md:inline text-beige/90 hover:text-ivory transition-colors">
+              {PHONE_DISPLAY}
+            </a>
+            <SocialIcons tone="light" size="sm" className="hidden sm:flex" />
+          </div>
+        </div>
+      </div>
+      <div
+        className={`transition-[padding,background-color,box-shadow] duration-300 ${
+          scrolled
+            ? "bg-ivory/95 backdrop-blur-md shadow-sm border-b border-charcoal/10 py-2.5"
+            : "bg-ivory py-3.5 border-b border-charcoal/5"
+        }`}
+      >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
         <a
           href="#home"
@@ -64,7 +81,7 @@ export function Navbar() {
             href={quoteHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-[2px] bg-plum hover:bg-magenta text-ivory px-5 py-2.5 text-sm font-semibold transition-colors shadow-sm min-h-[44px]"
+            className="inline-flex items-center gap-2 rounded-[2px] bg-charcoal hover:bg-plum text-ivory px-5 py-2.5 text-sm font-semibold transition-colors shadow-sm min-h-[44px]"
           >
             <WhatsAppIcon className="w-4 h-4 text-champagne" />
             <span>Get a Free Quote</span>
@@ -80,6 +97,7 @@ export function Navbar() {
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
+      </div>
       </div>
 
       <AnimatePresence>

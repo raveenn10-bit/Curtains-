@@ -32,7 +32,7 @@ export function ContactSection() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
               Get In Touch
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-charcoal mt-2">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
               Madu Curtains
             </h2>
             <p className="text-base text-charcoal/80 mt-3">

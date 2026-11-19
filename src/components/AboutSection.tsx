@@ -26,7 +26,7 @@ export function AboutSection() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
             About Madu Curtains · Galle
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-charcoal mt-2 leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2 leading-tight">
             Making Every House Feel Like Home.
           </h2>
           <p className="text-base text-charcoal/80 mt-5 leading-relaxed">

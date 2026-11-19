@@ -51,6 +51,17 @@ export interface FaqItem {
 export const WHATSAPP_NUMBER = "94779381373";
 export const PHONE_DISPLAY = "077 938 1373";
 
+/**
+ * Social profiles. Leave a URL empty to hide that icon.
+ * TODO: add Madu Curtains' real Facebook / Instagram / TikTok page URLs.
+ */
+export const SOCIAL_LINKS = {
+  facebook: "",
+  instagram: "",
+  tiktok: "",
+  whatsapp: `https://wa.me/${WHATSAPP_NUMBER}`,
+};
+
 export function buildWhatsAppUrl(message: string): string {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
@@ -59,29 +70,32 @@ export const HERO_SLIDES = [
   {
     id: "hero-1",
     image: "/images/hero-1.webp",
-    eyebrow: "Galle, Sri Lanka · Bespoke Window Styling",
-    title: "Beautiful Curtains. Timeless Interiors.",
+    eyebrow: "Galle, Sri Lanka · Made to measure",
+    sinhala: "ඔබේ නිවසට ගැළපෙන අලංකාර තිර රෙදි",
+    title: "Beautiful curtains. Timeless interiors.",
     subtitle:
-      "Transform your home with beautifully crafted curtains, tailored to your style and space.",
-    caption: "Champagne & Ivory Double-Layer Drapery · Design Inspiration",
+      "Curtains tailored to your windows, your light and your style — quoted directly on WhatsApp.",
+    caption: "Champagne & ivory double-layer drapery",
   },
   {
     id: "hero-2",
     image: "/images/hero-2.webp",
-    eyebrow: "Tailored Two-Tone & Eyelet Collections",
-    title: "Beautiful Curtains. Timeless Interiors.",
+    eyebrow: "Two-tone & eyelet collection",
+    sinhala: "නවීන නිවෙස් සඳහා නවීන මෝස්තර",
+    title: "Clean lines for modern homes.",
     subtitle:
-      "Transform your home with beautifully crafted curtains, tailored to your style and space.",
-    caption: "Charcoal & Soft Beige Eyelet Curtains · Design Inspiration",
+      "Two-tone and eyelet curtains that frame tall windows and doors neatly.",
+    caption: "Charcoal & soft beige eyelet curtains",
   },
   {
     id: "hero-3",
     image: "/images/hero-3.webp",
-    eyebrow: "Floral Prints & Heritage Elegance",
-    title: "Beautiful Curtains. Timeless Interiors.",
+    eyebrow: "Floral & heritage prints",
+    sinhala: "සම්ප්‍රදායික අලංකාරය, නවීන නිමාව",
+    title: "Prints with a sense of place.",
     subtitle:
-      "Transform your home with beautifully crafted curtains, tailored to your style and space.",
-    caption: "Plum & Champagne Floral Drapes · Design Inspiration",
+      "Floral and botanical drapes for classic residences and coastal villas.",
+    caption: "Plum & champagne floral drapes",
   },
 ];
 

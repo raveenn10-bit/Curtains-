@@ -15,6 +15,8 @@ import { FaqSection } from "@/components/FaqSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { TrustStrip } from "@/components/TrustStrip";
+import { WhatsAppOrder } from "@/components/WhatsAppOrder";
 
 export default function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -27,6 +29,7 @@ export default function HomePage() {
       <Navbar />
       <main className="flex-1">
         <HeroCarousel />
+        <TrustStrip />
         <CollectionsSection onSelectCategory={setSelectedCategory} />
         <ProductShowcase
           selectedCategory={selectedCategory}
@@ -40,6 +43,7 @@ export default function HomePage() {
         <WhyChooseUs />
         <AboutSection />
         <FaqSection />
+        <WhatsAppOrder />
         <ContactSection />
       </main>
       <Footer />

@@ -31,7 +31,7 @@ export function WhyChooseUs() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
             Why Madu Curtains
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-charcoal mt-2 leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2 leading-tight">
             Thoughtful craft for every window
           </h2>
           <p className="text-base text-charcoal/75 mt-5 leading-relaxed max-w-sm">
@@ -49,7 +49,7 @@ export function WhyChooseUs() {
               <span className="font-serif text-xl text-plum/70 tabular-nums">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <h3 className="font-serif text-xl sm:text-2xl font-semibold text-charcoal leading-snug">
+              <h3 className="font-serif text-lg sm:text-xl font-semibold text-charcoal leading-snug">
                 {f.title}
               </h3>
               <p className="col-start-2 sm:col-start-3 text-sm sm:text-base text-charcoal/75 leading-relaxed">

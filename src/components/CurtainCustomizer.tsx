@@ -97,7 +97,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
             Interactive Customizer
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-charcoal mt-2">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
             Customize Your Curtains
           </h2>
           <p className="text-sm sm:text-base text-charcoal/75 mt-3">
@@ -128,7 +128,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
 
             <div className="mt-5 space-y-2.5">
               <div className="flex items-center justify-between gap-2">
-                <h3 className="font-serif text-2xl font-semibold text-charcoal">
+                <h3 className="font-serif text-xl font-semibold text-charcoal">
                   {matchedProduct.name}
                 </h3>
                 <span className="text-xs font-semibold text-plum bg-ivory px-2.5 py-1 rounded-[2px] border border-champagne/40">

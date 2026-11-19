@@ -15,7 +15,7 @@ export function FaqSection() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
             Frequently Asked Questions
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-charcoal mt-2">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
             Helpful Details Before You Inquire
           </h2>
         </div>
@@ -34,7 +34,7 @@ export function FaqSection() {
                   aria-expanded={isOpen}
                   className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 min-h-[56px] focus:outline-none focus-visible:ring-2 focus-visible:ring-magenta"
                 >
-                  <span className="font-serif text-xl sm:text-2xl font-semibold text-charcoal">
+                  <span className="font-serif text-base sm:text-lg font-medium text-charcoal">
                     {item.question}
                   </span>
                   <ChevronDown

@@ -27,14 +27,14 @@ const STEPS = [
 
 export function HowItWorks() {
   return (
-    <section className="py-16 lg:py-24 bg-plum text-ivory">
+    <section id="how-it-works" className="py-16 lg:py-24 bg-plum text-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-champagne">
               The process
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold mt-2">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold mt-2">
               How it works
             </h2>
           </div>
@@ -62,7 +62,7 @@ export function HowItWorks() {
               <span className="font-serif text-4xl text-champagne tabular-nums">
                 {step.num}
               </span>
-              <h3 className="font-serif text-2xl font-semibold text-ivory mt-4">
+              <h3 className="font-serif text-xl font-semibold text-ivory mt-4">
                 {step.title}
               </h3>
               <p className="text-sm text-beige/85 mt-2.5 leading-relaxed">

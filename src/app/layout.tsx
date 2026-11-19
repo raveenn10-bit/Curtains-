@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import { DM_Sans, Noto_Sans_Sinhala } from "next/font/google";
 import "./globals.css";
 import { FAQ_ITEMS } from "@/data/products";
 
-const cormorant = Cormorant_Garamond({
+const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-cormorant",
+  variable: "--font-dm-sans",
   display: "swap",
 });
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-manrope",
+const sinhala = Noto_Sans_Sinhala({
+  subsets: ["sinhala"],
+  weight: ["400", "500", "600"],
+  variable: "--font-sinhala",
   display: "swap",
 });
 
@@ -91,7 +91,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${cormorant.variable} ${manrope.variable}`}>
+    <html lang="en" className={`${dmSans.variable} ${sinhala.variable}`}>
       <body className="font-sans antialiased bg-ivory text-charcoal selection:bg-magenta selection:text-white">
         <script
           type="application/ld+json"

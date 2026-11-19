@@ -38,6 +38,7 @@ h1,
 h2,
 h3 {
   text-wrap: balance;
+  letter-spacing: -0.025em;
 }
 
 @media (prefers-reduced-motion: reduce) {

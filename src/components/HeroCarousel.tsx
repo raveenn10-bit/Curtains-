@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, Check, ChevronLeft, ChevronRight } from "lucide-react";
 import { HERO_SLIDES } from "@/data/products";
 
 export function HeroCarousel() {
@@ -35,7 +35,7 @@ export function HeroCarousel() {
   return (
     <section
       id="home"
-      className="relative pt-20 min-h-[600px] lg:min-h-[760px] flex items-end lg:items-center overflow-hidden bg-beige"
+      className="relative pt-[7.25rem] min-h-[640px] lg:min-h-[780px] flex items-end lg:items-center overflow-hidden bg-beige"
     >
       {/* Background slides — bright, unobstructed curtain photography with subtle left scrim for WCAG readability */}
       <div className="absolute inset-0">
@@ -69,11 +69,14 @@ export function HeroCarousel() {
 
       <div className="relative z-30 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-14 lg:py-24">
         <div ref={contentRef} className="max-w-xl">
-          <p className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-plum mb-5">
-            <span className="h-px w-10 bg-plum/60" aria-hidden="true" />
+          <p className="flex items-center gap-3 text-[11px] sm:text-xs font-semibold uppercase tracking-[0.14em] sm:tracking-[0.2em] text-plum mb-4">
+            <span className="hidden sm:block h-px w-10 bg-plum/60" aria-hidden="true" />
             {current.eyebrow}
           </p>
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-charcoal leading-[1.08] tracking-tight">
+          <p className="font-sinhala text-base sm:text-lg text-plum/90 mb-2">
+            {current.sinhala}
+          </p>
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-[4.25rem] font-semibold text-charcoal leading-[1.04]">
             {current.title}
           </h1>
           <p className="mt-5 text-base sm:text-lg text-charcoal/85 leading-relaxed max-w-lg">
@@ -83,18 +86,24 @@ export function HeroCarousel() {
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a
               href="#showcase"
-              className="inline-flex items-center gap-2 rounded-[2px] bg-plum hover:bg-magenta text-ivory px-7 py-3.5 text-sm font-semibold transition-all shadow-sm min-h-[44px]"
+              className="inline-flex items-center gap-2 rounded-[2px] bg-charcoal hover:bg-plum text-ivory px-7 py-3.5 text-sm font-semibold transition-all shadow-sm min-h-[44px]"
             >
-              <span>Explore Collections</span>
+              <span>Explore collections</span>
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
               href="#customizer"
               className="inline-flex items-center gap-2 rounded-[2px] bg-ivory/95 hover:bg-beige text-charcoal border border-charcoal/25 px-7 py-3.5 text-sm font-semibold transition-all min-h-[44px]"
             >
-              <span>Request a Custom Quote</span>
+              <span>Request a quote</span>
             </a>
           </div>
+
+          <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-charcoal/75">
+            <li className="flex items-center gap-1.5"><Check className="w-3.5 h-3.5 text-plum" aria-hidden="true" />Custom sizes</li>
+            <li className="flex items-center gap-1.5"><Check className="w-3.5 h-3.5 text-plum" aria-hidden="true" />Free WhatsApp quote</li>
+            <li className="flex items-center gap-1.5"><Check className="w-3.5 h-3.5 text-plum" aria-hidden="true" />20+ designs</li>
+          </ul>
 
           <div className="mt-10 flex items-center gap-4">
             <div className="flex items-center gap-2">

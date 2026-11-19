@@ -33,7 +33,7 @@ export function GallerySection() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
               Interior Inspiration Gallery
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-charcoal mt-2">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
               Spaces Transformed by Drapery
             </h2>
           </div>
@@ -144,7 +144,7 @@ export function GallerySection() {
                 />
               </div>
               <div className="mt-4 text-center text-ivory">
-                <p className="font-serif text-2xl font-semibold">
+                <p className="font-serif text-xl font-semibold">
                   {GALLERY_ITEMS[selectedIndex].title}
                 </p>
                 <p className="text-sm text-beige/85 mt-1">

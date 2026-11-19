@@ -1,5 +1,6 @@
 import React from "react";
 import { Phone } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa6";
 import { buildWhatsAppUrl } from "@/data/products";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
@@ -16,10 +17,9 @@ export function FloatingWhatsApp() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with Madu Curtains on WhatsApp"
-        className="hidden lg:inline-flex fixed bottom-6 right-6 z-40 items-center gap-2.5 rounded-[2px] bg-plum hover:bg-magenta text-ivory px-5 py-3.5 shadow-sm border border-champagne/40 transition-colors duration-200"
+        className="hidden lg:inline-flex fixed bottom-6 right-6 z-40 w-14 h-14 items-center justify-center rounded-full bg-[#25D366] hover:bg-[#1ebe5b] text-white shadow-md transition-colors duration-200"
       >
-        <WhatsAppIcon className="w-5 h-5 text-champagne" />
-        <span className="text-sm font-semibold">WhatsApp Quote</span>
+        <FaWhatsapp className="w-7 h-7" aria-hidden="true" />
       </a>
 
       {/* Mobile Sticky Inquiry Bar */}

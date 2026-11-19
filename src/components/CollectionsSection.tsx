@@ -19,7 +19,7 @@ export function CollectionsSection({ onSelectCategory }: CollectionsSectionProps
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
               Curated Collections
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-charcoal mt-2">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
               Tailored Styles for Every Room
             </h2>
           </div>
@@ -64,7 +64,7 @@ export function CollectionsSection({ onSelectCategory }: CollectionsSectionProps
                   <ArrowUpRight className="w-4 h-4" />
                 </div>
                 <div className="absolute inset-x-0 bottom-0 p-5">
-                  <h3 className="font-serif text-xl sm:text-2xl font-semibold text-ivory">
+                  <h3 className="font-serif text-lg sm:text-xl font-semibold text-ivory">
                     {cat.title}
                   </h3>
                   <p className="text-xs sm:text-sm text-beige/90 mt-1">

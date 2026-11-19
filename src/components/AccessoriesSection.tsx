@@ -12,7 +12,7 @@ export function AccessoriesSection() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
               Hardware & Finishing Touches
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-charcoal mt-2">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
               Curtain Rods & Accessories
             </h2>
           </div>
@@ -45,7 +45,7 @@ export function AccessoriesSection() {
                     <span className="text-xs font-semibold uppercase tracking-wider text-magenta">
                       {item.category}
                     </span>
-                    <h3 className="font-serif text-2xl font-semibold text-charcoal mt-1.5">
+                    <h3 className="font-serif text-xl font-semibold text-charcoal mt-1.5">
                       {item.name}
                     </h3>
                     <p className="text-sm text-charcoal/75 mt-2 leading-relaxed">
