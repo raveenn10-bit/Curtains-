@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import { DM_Sans, Noto_Sans_Sinhala } from "next/font/google";
+import { Inter, Manrope, Noto_Sans_Sinhala } from "next/font/google";
 import "./globals.css";
 import { FAQ_ITEMS } from "@/data/products";
 
-const dmSans = DM_Sans({
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-dm-sans",
+  weight: ["500", "600", "700", "800"],
+  variable: "--font-manrope",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
   display: "swap",
 });
 
@@ -91,7 +97,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={`${dmSans.variable} ${sinhala.variable}`}>
+    <html lang="en" className={`${manrope.variable} ${inter.variable} ${sinhala.variable}`}>
       <body className="font-sans antialiased bg-ivory text-charcoal selection:bg-magenta selection:text-white">
         <script
           type="application/ld+json"

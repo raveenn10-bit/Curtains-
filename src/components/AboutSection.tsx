@@ -8,7 +8,7 @@ export function AboutSection() {
     <section id="about" className="py-16 lg:py-24 bg-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 items-center">
         <div className="lg:col-span-6">
-          <div className="relative aspect-[4/3] rounded-[4px] overflow-hidden bg-beige border border-champagne/35 shadow-sm">
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-beige border border-champagne/35 shadow-sm">
             <Image
               src="/images/about-atelier.webp"
               alt="Curated curtain fabric swatches and tailoring workspace inspiration"
@@ -16,7 +16,7 @@ export function AboutSection() {
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
-            <span className="absolute bottom-3 left-3 rounded-[2px] bg-ivory/90 px-3 py-1 text-[11px] font-medium text-charcoal">
+            <span className="absolute bottom-3 left-3 rounded-full bg-ivory/90 px-3 py-1 text-[11px] font-medium text-charcoal">
               Atelier & Fabric Inspiration
             </span>
           </div>
@@ -26,7 +26,7 @@ export function AboutSection() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
             About Madu Curtains · Galle
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2 leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-charcoal mt-2 leading-tight">
             Making Every House Feel Like Home.
           </h2>
           <p className="text-base text-charcoal/80 mt-5 leading-relaxed">
@@ -43,14 +43,14 @@ export function AboutSection() {
               )}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-[2px] bg-plum hover:bg-magenta text-ivory px-6 py-3.5 text-sm font-semibold transition-colors min-h-[44px]"
+              className="inline-flex items-center gap-2 rounded-full bg-plum hover:bg-magenta text-ivory px-6 py-3.5 text-sm font-semibold transition-colors min-h-[44px]"
             >
               <WhatsAppIcon className="w-4 h-4 text-champagne" />
               <span>Chat With Us</span>
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center rounded-[2px] border border-charcoal/25 hover:border-magenta text-charcoal px-6 py-3.5 text-sm font-semibold transition-colors min-h-[44px]"
+              className="inline-flex items-center rounded-full border border-charcoal/25 hover:border-magenta text-charcoal px-6 py-3.5 text-sm font-semibold transition-colors min-h-[44px]"
             >
               Contact Details
             </a>

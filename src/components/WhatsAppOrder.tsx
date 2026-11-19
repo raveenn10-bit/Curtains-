@@ -1,5 +1,5 @@
 import React from "react";
-import { FaWhatsapp } from "react-icons/fa6";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 import { buildWhatsAppUrl, PHONE_DISPLAY } from "@/data/products";
 
 const CHIPS = ["Send a photo of your window", "Share width & height", "Pick colours", "Get your quote"];
@@ -8,12 +8,12 @@ export function WhatsAppOrder() {
   return (
     <section className="bg-ivory py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-charcoal text-ivory px-6 py-10 sm:px-12 sm:py-14 grid lg:grid-cols-12 gap-8 items-center">
+        <div className="bg-charcoal text-ivory rounded-3xl px-6 py-10 sm:px-12 sm:py-14 grid lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-champagne">
               Order on WhatsApp
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl font-semibold mt-3 leading-tight">
+            <h2 className="font-heading text-3xl sm:text-4xl font-extrabold tracking-tight mt-3 leading-tight">
               Get a quote in one conversation.
             </h2>
             <p className="font-sinhala text-base text-beige/80 mt-3">
@@ -23,7 +23,7 @@ export function WhatsAppOrder() {
               {CHIPS.map((c) => (
                 <li
                   key={c}
-                  className="border border-ivory/20 px-3 py-1.5 text-xs font-medium text-beige/90"
+                  className="rounded-full border border-ivory/20 px-3 py-1.5 text-xs font-medium text-beige/90"
                 >
                   {c}
                 </li>
@@ -37,9 +37,9 @@ export function WhatsAppOrder() {
               )}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1ebe5b] text-charcoal px-7 py-4 text-base font-semibold transition-colors duration-200 min-h-[52px]"
+              className="inline-flex items-center gap-3 rounded-full bg-white hover:bg-[#25D366] hover:text-white text-charcoal pl-3 pr-7 py-3 text-base font-semibold transition-colors duration-200 min-h-[52px]"
             >
-              <FaWhatsapp className="w-6 h-6" aria-hidden="true" />
+              <WhatsAppIcon className="w-7 h-7" />
               Chat on WhatsApp
             </a>
             <p className="text-sm text-beige/70">

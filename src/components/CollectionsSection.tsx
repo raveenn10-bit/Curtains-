@@ -19,7 +19,7 @@ export function CollectionsSection({ onSelectCategory }: CollectionsSectionProps
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
               Curated Collections
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-charcoal mt-2">
               Tailored Styles for Every Room
             </h2>
           </div>
@@ -46,7 +46,7 @@ export function CollectionsSection({ onSelectCategory }: CollectionsSectionProps
                   document.getElementById("showcase")?.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="group relative min-w-[240px] sm:min-w-[260px] md:min-w-0 snap-start text-left rounded-[4px] overflow-hidden bg-beige border border-champagne/25 shadow-sm hover:shadow-md transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-magenta"
+              className="group relative min-w-[240px] sm:min-w-[260px] md:min-w-0 snap-start text-left rounded-2xl overflow-hidden bg-beige border border-champagne/25 shadow-sm hover:shadow-md transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-magenta"
             >
               <div className="relative aspect-[4/5] w-full overflow-hidden">
                 <Image

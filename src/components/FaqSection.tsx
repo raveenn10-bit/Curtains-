@@ -15,7 +15,7 @@ export function FaqSection() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
             Frequently Asked Questions
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-charcoal mt-2">
             Helpful Details Before You Inquire
           </h2>
         </div>
@@ -26,7 +26,7 @@ export function FaqSection() {
             return (
               <div
                 key={item.question}
-                className="rounded-[4px] bg-ivory border border-champagne/35 overflow-hidden shadow-sm"
+                className="rounded-2xl bg-ivory border border-champagne/35 overflow-hidden shadow-sm"
               >
                 <button
                   type="button"

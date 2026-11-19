@@ -32,7 +32,7 @@ export function ContactSection() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
               Get In Touch
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-charcoal mt-2">
               Madu Curtains
             </h2>
             <p className="text-base text-charcoal/80 mt-3">
@@ -40,7 +40,7 @@ export function ContactSection() {
             </p>
           </div>
 
-          <div className="space-y-4 rounded-[4px] bg-beige/65 border border-champagne/35 p-6">
+          <div className="space-y-4 rounded-2xl bg-beige/65 border border-champagne/35 p-6">
             <div className="flex items-start gap-3.5">
               <MapPin className="w-5 h-5 text-plum mt-0.5 shrink-0" />
               <div>
@@ -88,7 +88,7 @@ export function ContactSection() {
             <div className="pt-2 flex flex-wrap gap-3">
               <a
                 href="tel:+94779381373"
-                className="flex-1 inline-flex items-center justify-center gap-2 rounded-[2px] border border-charcoal/25 hover:border-magenta px-4 py-2.5 text-sm font-semibold text-charcoal transition-colors min-h-[44px]"
+                className="flex-1 inline-flex items-center justify-center gap-2 rounded-full border border-charcoal/25 hover:border-magenta px-4 py-2.5 text-sm font-semibold text-charcoal transition-colors min-h-[44px]"
               >
                 <Phone className="w-4 h-4 text-plum" />
                 <span>Call Now</span>
@@ -97,7 +97,7 @@ export function ContactSection() {
                 href={buildWhatsAppUrl("Hello Madu Curtains! I would like to inquire about custom curtains.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center gap-2 rounded-[2px] bg-plum hover:bg-magenta px-4 py-2.5 text-sm font-semibold text-ivory transition-colors min-h-[44px]"
+                className="flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-plum hover:bg-magenta px-4 py-2.5 text-sm font-semibold text-ivory transition-colors min-h-[44px]"
               >
                 <WhatsAppIcon className="w-4 h-4 text-champagne" />
                 <span>WhatsApp</span>
@@ -109,7 +109,7 @@ export function ContactSection() {
         <form
           onSubmit={handleContactSubmit}
           noValidate
-          className="lg:col-span-7 rounded-[4px] bg-beige/45 border border-champagne/35 p-6 sm:p-8 space-y-5"
+          className="lg:col-span-7 rounded-2xl bg-beige/45 border border-champagne/35 p-6 sm:p-8 space-y-5"
         >
           <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-charcoal">
             Send a Direct Inquiry
@@ -128,7 +128,7 @@ export function ContactSection() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Enter your name"
-                className="w-full rounded-[3px] border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
+                className="w-full rounded-xl border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
               />
             </div>
             <div>
@@ -144,7 +144,7 @@ export function ContactSection() {
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder="e.g. 077 000 0000"
-                className="w-full rounded-[3px] border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
+                className="w-full rounded-xl border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
               />
             </div>
           </div>
@@ -161,7 +161,7 @@ export function ContactSection() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Tell us about your rooms, curtain styles, or window sizes..."
-              className="w-full rounded-[3px] border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta"
+              className="w-full rounded-xl border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta"
             />
           </div>
           {error && (
@@ -171,7 +171,7 @@ export function ContactSection() {
           )}
           <button
             type="submit"
-            className="inline-flex items-center justify-center gap-2 rounded-[2px] bg-plum hover:bg-magenta text-ivory px-7 py-3.5 text-sm font-semibold transition-colors min-h-[48px]"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-plum hover:bg-magenta text-ivory px-7 py-3.5 text-sm font-semibold transition-colors min-h-[48px]"
           >
             <Send className="w-4 h-4 text-champagne" />
             <span>Send via WhatsApp</span>

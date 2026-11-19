@@ -31,7 +31,7 @@ export function WhyChooseUs() {
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
             Why Madu Curtains
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2 leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-charcoal mt-2 leading-tight">
             Thoughtful craft for every window
           </h2>
           <p className="text-base text-charcoal/75 mt-5 leading-relaxed max-w-sm">

@@ -97,7 +97,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
           <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
             Interactive Customizer
           </p>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-charcoal mt-2">
             Customize Your Curtains
           </h2>
           <p className="text-sm sm:text-base text-charcoal/75 mt-3">
@@ -107,8 +107,8 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
 
         <div className="grid lg:grid-cols-12 gap-8 items-start">
           {/* Live Visual Preview Card */}
-          <div className="lg:col-span-5 rounded-[4px] bg-beige/75 border border-champagne/35 p-5 sm:p-6 shadow-sm">
-            <div className="relative aspect-[3/4] rounded-[4px] overflow-hidden bg-ivory">
+          <div className="lg:col-span-5 rounded-2xl bg-beige/75 border border-champagne/35 p-5 sm:p-6 shadow-sm">
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-ivory">
               <Image
                 src={matchedProduct.image}
                 alt={matchedProduct.alt}
@@ -131,7 +131,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
                 <h3 className="font-serif text-xl font-semibold text-charcoal">
                   {matchedProduct.name}
                 </h3>
-                <span className="text-xs font-semibold text-plum bg-ivory px-2.5 py-1 rounded-[2px] border border-champagne/40">
+                <span className="text-xs font-semibold text-plum bg-ivory px-2.5 py-1 rounded-full border border-champagne/40">
                   {matchedProduct.id}
                 </span>
               </div>
@@ -156,7 +156,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
           <form
             onSubmit={handleSubmit}
             noValidate
-            className="lg:col-span-7 rounded-[4px] bg-ivory border border-champagne/40 p-6 sm:p-8 shadow-sm space-y-6"
+            className="lg:col-span-7 rounded-2xl bg-ivory border border-champagne/40 p-6 sm:p-8 shadow-sm space-y-6"
           >
             <div className="grid sm:grid-cols-2 gap-5">
               <div>
@@ -170,7 +170,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
                   id="cust-design"
                   value={design}
                   onChange={(e) => setDesign(e.target.value)}
-                  className="w-full rounded-[3px] border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
+                  className="w-full rounded-xl border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
                 >
                   {CURTAIN_PRODUCTS.map((p) => (
                     <option key={p.id} value={p.name}>
@@ -191,7 +191,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
                   id="cust-room"
                   value={roomType}
                   onChange={(e) => setRoomType(e.target.value)}
-                  className="w-full rounded-[3px] border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
+                  className="w-full rounded-xl border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
                 >
                   {ROOM_TYPES.map((r) => (
                     <option key={r} value={r}>
@@ -234,19 +234,19 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
             </div>
 
             {/* Measurements */}
-            <div className="rounded-[4px] bg-beige/55 p-4 sm:p-5 border border-champagne/30 space-y-4">
+            <div className="rounded-2xl bg-beige/55 p-4 sm:p-5 border border-champagne/30 space-y-4">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-plum">
                   <Ruler className="w-4 h-4" />
                   Window Measurements
                 </span>
-                <div className="inline-flex rounded-[3px] bg-ivory p-1 border border-charcoal/10">
+                <div className="inline-flex rounded-xl bg-ivory p-1 border border-charcoal/10">
                   {(["inches", "cm", "feet"] as const).map((u) => (
                     <button
                       key={u}
                       type="button"
                       onClick={() => setUnit(u)}
-                      className={`px-3 py-1 rounded-[2px] text-xs font-semibold transition-colors ${
+                      className={`px-3 py-1 rounded-full text-xs font-semibold transition-colors ${
                         unit === u
                           ? "bg-plum text-ivory"
                           : "text-charcoal/75 hover:text-charcoal"
@@ -274,7 +274,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
                     value={width}
                     onChange={(e) => setWidth(e.target.value)}
                     placeholder={unit === "inches" ? "e.g. 72" : unit === "cm" ? "e.g. 180" : "e.g. 6"}
-                    className="w-full rounded-[3px] border border-charcoal/20 bg-ivory px-4 py-2.5 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
+                    className="w-full rounded-xl border border-charcoal/20 bg-ivory px-4 py-2.5 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
                   />
                 </div>
                 <div>
@@ -292,7 +292,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
                     value={height}
                     onChange={(e) => setHeight(e.target.value)}
                     placeholder={unit === "inches" ? "e.g. 96" : unit === "cm" ? "e.g. 240" : "e.g. 8"}
-                    className="w-full rounded-[3px] border border-charcoal/20 bg-ivory px-4 py-2.5 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
+                    className="w-full rounded-xl border border-charcoal/20 bg-ivory px-4 py-2.5 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
                   />
                 </div>
                 <div>
@@ -308,7 +308,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
                     min="1"
                     value={windowsCount}
                     onChange={(e) => setWindowsCount(e.target.value)}
-                    className="w-full rounded-[3px] border border-charcoal/20 bg-ivory px-4 py-2.5 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
+                    className="w-full rounded-xl border border-charcoal/20 bg-ivory px-4 py-2.5 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
                   />
                 </div>
               </div>
@@ -326,7 +326,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
                   id="cust-style"
                   value={curtainStyle}
                   onChange={(e) => setCurtainStyle(e.target.value)}
-                  className="w-full rounded-[3px] border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
+                  className="w-full rounded-xl border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
                 >
                   {CURTAIN_STYLES.map((s) => (
                     <option key={s} value={s}>
@@ -348,7 +348,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
                   placeholder="e.g. Include matching wooden rod or sheer layer"
-                  className="w-full rounded-[3px] border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
+                  className="w-full rounded-xl border border-charcoal/20 bg-ivory px-4 py-3 text-sm text-charcoal focus:outline-none focus:border-magenta min-h-[44px]"
                 />
               </div>
             </div>
@@ -356,7 +356,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
             {error && (
               <div
                 role="alert"
-                className="flex items-center gap-2 rounded-[3px] bg-magenta/10 border border-magenta/30 px-4 py-3 text-sm text-plum font-medium"
+                className="flex items-center gap-2 rounded-xl bg-magenta/10 border border-magenta/30 px-4 py-3 text-sm text-plum font-medium"
               >
                 <AlertCircle className="w-4 h-4 shrink-0" />
                 <span>{error}</span>
@@ -370,7 +370,7 @@ export function CurtainCustomizer({ preselectedDesign }: CurtainCustomizerProps)
               </p>
               <button
                 type="submit"
-                className="inline-flex items-center justify-center gap-2 rounded-[2px] bg-plum hover:bg-magenta text-ivory px-7 py-3.5 text-sm font-semibold transition-all shadow-sm min-h-[48px]"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-plum hover:bg-magenta text-ivory px-7 py-3.5 text-sm font-semibold transition-all shadow-sm min-h-[48px]"
               >
                 <WhatsAppIcon className="w-4 h-4 text-champagne" />
                 <span>Send WhatsApp Quote Request</span>

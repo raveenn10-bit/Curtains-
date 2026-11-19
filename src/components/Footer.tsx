@@ -37,10 +37,10 @@ const COLUMNS = [
 
 export function Footer() {
   return (
-    <footer className="bg-[#1c1a1b] text-ivory pb-24 lg:pb-0">
+    <footer className="bg-charcoal text-ivory">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12 grid gap-12 lg:grid-cols-12">
         <div className="lg:col-span-4">
-          <div className="inline-flex bg-ivory px-3 py-2">
+          <div className="inline-flex bg-white rounded-xl px-3 py-2">
             <Image
               src="/images/madu-logo.webp"
               alt="Madu Curtains"

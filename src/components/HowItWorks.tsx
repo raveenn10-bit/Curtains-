@@ -34,7 +34,7 @@ export function HowItWorks() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-champagne">
               The process
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold mt-2">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight mt-2">
               How it works
             </h2>
           </div>
@@ -44,7 +44,7 @@ export function HowItWorks() {
             )}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-[2px] bg-ivory text-plum hover:bg-champagne hover:text-charcoal px-6 py-3 text-sm font-semibold transition-colors duration-200 min-h-[44px] self-start md:self-auto"
+            className="inline-flex items-center gap-2 rounded-full bg-ivory text-plum hover:bg-champagne hover:text-charcoal px-6 py-3 text-sm font-semibold transition-colors duration-200 min-h-[44px] self-start md:self-auto"
           >
             <WhatsAppIcon className="w-4 h-4" />
             <span>Start your inquiry</span>

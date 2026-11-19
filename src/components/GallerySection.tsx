@@ -33,7 +33,7 @@ export function GallerySection() {
             <p className="text-xs font-semibold uppercase tracking-[0.22em] text-magenta">
               Interior Inspiration Gallery
             </p>
-            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-semibold text-charcoal mt-2">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-charcoal mt-2">
               Spaces Transformed by Drapery
             </h2>
           </div>
@@ -49,7 +49,7 @@ export function GallerySection() {
               key={item.id}
               type="button"
               onClick={() => setSelectedIndex(idx)}
-              className="group relative block w-full break-inside-avoid rounded-[4px] overflow-hidden bg-beige border border-champagne/25 shadow-sm hover:shadow-md transition-all text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-magenta"
+              className="group relative block w-full break-inside-avoid rounded-2xl overflow-hidden bg-beige border border-champagne/25 shadow-sm hover:shadow-md transition-all text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-magenta"
             >
               <Image
                 src={item.image}
@@ -62,7 +62,7 @@ export function GallerySection() {
                 className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-transparent to-transparent opacity-85 group-hover:opacity-95 transition-opacity"
                 aria-hidden="true"
               />
-              <span className="absolute top-3 left-3 rounded-[2px] bg-ivory/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-plum">
+              <span className="absolute top-3 left-3 rounded-full bg-ivory/90 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-plum">
                 {item.category} · Design Inspiration
               </span>
               <span className="absolute top-3 right-3 w-9 h-9 rounded-full bg-ivory/90 text-charcoal flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
@@ -134,7 +134,7 @@ export function GallerySection() {
               className="relative max-w-4xl w-full flex flex-col items-center"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="relative w-full aspect-[4/3] rounded-[4px] overflow-hidden bg-charcoal">
+              <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-charcoal">
                 <Image
                   src={GALLERY_ITEMS[selectedIndex].image}
                   alt={GALLERY_ITEMS[selectedIndex].title}

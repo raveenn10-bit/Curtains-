@@ -17,8 +17,13 @@ html {
 
 body {
   background-color: #FAF8F5;
-  color: #252525;
+  color: #242824;
+  font-family: var(--font-inter), "Inter", system-ui, sans-serif;
   overflow-x: hidden;
+}
+
+section[id] {
+  scroll-margin-top: 112px;
 }
 
 a,
@@ -38,7 +43,8 @@ h1,
 h2,
 h3 {
   text-wrap: balance;
-  letter-spacing: -0.025em;
+  font-family: var(--font-manrope), "Manrope", system-ui, sans-serif;
+  letter-spacing: -0.02em;
 }
 
 @media (prefers-reduced-motion: reduce) {
